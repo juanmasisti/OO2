@@ -1,0 +1,33 @@
+Bad Smells detectados: 
+-Long Method (Método largo): El método se llama imprimirValores(), pero en realidad hace de todo: acumula las edades, acumula los salarios, calcula el promedio, formatea un texto y, recién al final, imprime. Esto rompe la cohesión porque el método asume múltiples responsabilidades.
+-Uso de imperativos: uso del clásico bucle for mutando variables temporales (totalEdades, totalSalarios), utilizar Streams.
+-Variables temporales
+
+Soluciones:
+Extract Method (Extraer Método): Sacar la lógica de cálculo y moverla a métodos nuevos con nombres que expliquen exactamente su propósito.
+
+Replace Temp with Query (Reemplazar Variable Temporal por Consulta): Eliminar las variables temporales locales (totalEdades, promedioEdades, totalSalarios) y reemplazarlas directamente por las llamadas a los nuevos métodos que se extrajeron.
+
+Código corregido:
+public void imprimirValores() {
+    // Replace Temp with Query: usamos directamente los métodos en lugar de variables temporales
+    String message = String.format("El promedio de las edades es %s y el total de salarios es %s", 
+                                   this.calcularPromedioEdades(), 
+                                   this.calcularTotalSalarios());
+    System.out.println(message);
+}
+
+// Extract Method + Enfoque Declarativo (Streams)
+private double calcularPromedioEdades() {
+    return personal.stream()
+                   .mapToInt(Empleado::getEdad) // Mapeamos igual que en TS
+                   .average()
+                   .orElse(0);
+}
+
+// Extract Method + Enfoque Declarativo (Streams)
+private double calcularTotalSalarios() {
+    return personal.stream()
+                   .mapToDouble(Empleado::getSalario)
+                   .sum();
+}

@@ -1,0 +1,19 @@
+El refactoring Rename Variable se debe aplicar únicamente en el ámbito (scope) donde vive la variable local que nos interesa, que es dentro del método next().
+El método refactorizado quedaría:
+
+public char next() {
+    int currentPosition;
+    if (idx >= source.length)
+        idx = 0;
+    currentPosition = idx++;
+    return source[currentPosition]; // Se actualiza la línea 18
+}
+
+
+Existen dos variables locales distintas que se llaman igual (result):
+
+Una declarada en la línea 6 (dentro del constructor, de tipo char).
+
+Otra declarada en la línea 14 (dentro de next(), de tipo int).
+
+Si un desarrollador intenta hacer este refactoring usando la función "Buscar y Reemplazar" (Ctrl + F) de un editor de texto básico para cambiar la palabra result por currentPosition, accidentalmente terminaría renombrando también la variable del constructor.

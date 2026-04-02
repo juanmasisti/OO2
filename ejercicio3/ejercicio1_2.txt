@@ -1,0 +1,5 @@
+El mal olor (Code Smell): El diseño inicial sufre de Feature Envy (Envidia de Atributo). Esto ocurre porque el método "participaEnProyecto" de la clase Persona está utilizando exclusivamente los datos y métodos de otra clase (Proyecto) para realizar su trabajo, mostrando más interés en la clase vecina que en la propia.
+
+El Refactoring aplicado: La operación que se realizó en el diagrama de la Figura 2 es un Move Method (Mover Método). Esta mecánica dicta que si un método usa o usará muchos servicios de otra clase, debe moverse a la clase donde están esos datos.
+
+Justificación de por qué es apropiado: En el diseño orientado a objetos, los datos y las operaciones sobre esos datos deben vivir en la misma clase (alta cohesión). Si la clase Proyecto es la dueña de la colección participantes, es ella quien tiene la responsabilidad de saber si una persona pertenece o no a esa colección.

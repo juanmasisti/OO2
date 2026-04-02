@@ -1,0 +1,11 @@
+Mal olor detectado: Comentarios (Comments). Documentar no está mal, pero Fowler explica explícitamente que cuando un comentario se usa únicamente para traducir o explicar un método incomprensible, está actuando como un "desodorante" para tapar un código que huele mal.
+
+Refactoring a aplicar: Rename Method (Renombrar Método) para las funciones, y Rename Variable/Parameter para los argumentos opacos.
+
+Luego del refactor quedaría:
+
+public double limiteDeCredito() { ... }
+
+protected double montoFacturadoEntre(LocalDate fechaInicio, LocalDate fechaFin) { ... }
+
+protected double montoCobradoEntre(LocalDate fechaInicio, LocalDate fechaFin) { ... }
