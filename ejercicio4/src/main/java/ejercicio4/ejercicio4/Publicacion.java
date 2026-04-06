@@ -12,11 +12,14 @@ public class Publicacion {
 	   
 	   public void darDislike() { likes--; }
 	   
-	   private int procesar() {
+	   // Rename Method: Cambiar la firma del método de private int procesar() a private int impacto().
+	   private int impacto() {
 	       return likes * 3;
 	   }
 	   
-	   public int calcular() {
-	       return procesar() * 10;
+	   // Rename Method: Cambiar la firma del método de public int calcular() a public int alcance().
+	   public int alcance() {
+		   // Cambiar la invocación dentro del método calcular().
+	       return impacto() * 10;
 	   }
 }
