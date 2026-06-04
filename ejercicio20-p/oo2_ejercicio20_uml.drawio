@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="13hW8FkBkDhObdeNfmFy">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FsGFcm60lh2lryXjAlQD-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;DatabaseAccess &lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="334" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-2" parent="FsGFcm60lh2lryXjAlQD-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-3" parent="FsGFcm60lh2lryXjAlQD-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-4" parent="FsGFcm60lh2lryXjAlQD-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ insertNewRow(rowData: List&amp;lt;String&amp;gt;): int&lt;br/&gt;    + getSearchResults(queryString: String): Collection&amp;lt;String&amp;gt;" vertex="1">
+          <mxGeometry height="96" width="250" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;lt;&amp;lt;Subject&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="429" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;RealSubject&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;DatabaseRealAccess  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="184" width="250" x="70" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-7" parent="FsGFcm60lh2lryXjAlQD-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- data: Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt;&amp;nbsp;&lt;div&gt;&amp;nbsp;- currentId: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-8" parent="FsGFcm60lh2lryXjAlQD-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-9" parent="FsGFcm60lh2lryXjAlQD-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ DatabaseRealAccess()&amp;nbsp;&lt;div&gt;+ insertNewRow(rowData: List&amp;lt;String&amp;gt;): int&lt;br/&gt;    + getSearchResults(queryString: String): Collection&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="96" width="250" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;Proxy&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DatabaseProxyAccess&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="280" x="510" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-11" parent="FsGFcm60lh2lryXjAlQD-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- isLogged: boolean&lt;br&gt;    - passwordHash: String" vertex="1">
+          <mxGeometry height="40" width="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-12" parent="FsGFcm60lh2lryXjAlQD-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-13" parent="FsGFcm60lh2lryXjAlQD-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ DatabaseProxyAccess(password: String)&amp;nbsp;&lt;div&gt;+ login(password: String): boolean&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ logout()&lt;br/&gt;    - checkAccess()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ insertNewRow(rowData: List&amp;lt;String&amp;gt;): int&lt;br/&gt;    + getSearchResults(queryString: String): Collection&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="112" width="280" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-14" edge="1" parent="1" source="FsGFcm60lh2lryXjAlQD-10" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=-0.007;exitY=0.125;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.016;entryY=0.163;entryDx=0;entryDy=0;entryPerimeter=0;" target="FsGFcm60lh2lryXjAlQD-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="300" y="410" as="sourcePoint" />
+            <mxPoint x="460" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1 realDataBase" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-16" edge="1" parent="1" source="FsGFcm60lh2lryXjAlQD-6" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=-0.016;entryY=0.792;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.56;exitY=-0.022;exitDx=0;exitDy=0;exitPerimeter=0;" target="FsGFcm60lh2lryXjAlQD-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="180" y="300" as="sourcePoint" />
+            <mxPoint x="340" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsGFcm60lh2lryXjAlQD-18" edge="1" parent="1" source="FsGFcm60lh2lryXjAlQD-10" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=1.016;entryY=0.844;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.65;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" target="FsGFcm60lh2lryXjAlQD-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="620" y="344" as="sourcePoint" />
+            <mxPoint x="740" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

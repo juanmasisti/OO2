@@ -1,0 +1,332 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="3kFfXfTNWGg61rK1btPX">
+    <mxGraphModel dx="1131" dy="1842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Llamada  " vertex="1">
+          <mxGeometry height="150" width="230" x="570" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-2" parent="Bz3iIJ4GVOsctyR1NY7K-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- tipoDeLlamada: String&amp;nbsp;&lt;div&gt;- origen: String&lt;/div&gt;&lt;div&gt;- destino: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- duracion: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-3" parent="Bz3iIJ4GVOsctyR1NY7K-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-4" parent="Bz3iIJ4GVOsctyR1NY7K-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getters()" vertex="1">
+          <mxGeometry height="42" width="230" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Empresa  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="300" x="620" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-6" parent="Bz3iIJ4GVOsctyR1NY7K-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- descuentoJur: double&amp;nbsp;&lt;div&gt;&amp;nbsp;- descuentoFis: double&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-7" parent="Bz3iIJ4GVOsctyR1NY7K-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-8" parent="Bz3iIJ4GVOsctyR1NY7K-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ agregarNumeroTelefono(str: String): boolean&amp;nbsp;&lt;div&gt;+ obtenerNumeroLibre(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ registrarUsuario(data: String, nombre: String, tipo: String): Cliente&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ registrarLlamada(origen: Cliente, destino: Cliente, t: String, duracion: int): Llamada&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ calcularMontoTotalLlamadas(cliente: Cliente): double&lt;/div&gt;&lt;div&gt;+ cantidadDeUsuarios(): int&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ existeUsuario(persona: Cliente): boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GestorNumerosDisponibles&amp;nbsp;" vertex="1">
+          <mxGeometry height="230" width="240" x="1040" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-30" parent="Bz3iIJ4GVOsctyR1NY7K-10" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;- lineas: SortedSet&amp;lt;String&amp;gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- tipoGenerador: String&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-11" parent="Bz3iIJ4GVOsctyR1NY7K-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="60" width="240" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-12" parent="Bz3iIJ4GVOsctyR1NY7K-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;div&gt;+ getLineas(): SortedSet&amp;lt;String&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ obtenerNumeroLibre(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ cambiarTipoGenerador(valor: String)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="240" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..* clientes" vertex="1">
+          <mxGeometry height="30" width="60" x="530" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-20" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Cliente&amp;nbsp;" vertex="1">
+          <mxGeometry height="170" width="230" x="240" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-21" parent="Bz3iIJ4GVOsctyR1NY7K-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp;- tipo: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- nombre: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- numeroTelefono: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- cuit: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- dni: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-22" parent="Bz3iIJ4GVOsctyR1NY7K-20" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-23" parent="Bz3iIJ4GVOsctyR1NY7K-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getters() / setters()&amp;nbsp;" vertex="1">
+          <mxGeometry height="42" width="230" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-24" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.019;entryY=0.714;entryDx=0;entryDy=0;entryPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-21" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="619" y="130" as="sourcePoint" />
+            <mxPoint x="660" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-25" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-23" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.947;exitY=1.074;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.188;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="50" y="90" as="sourcePoint" />
+            <mxPoint x="181" y="207" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*&lt;div&gt;llamadas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-34" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-8" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.663;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.389;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="757.5" y="400" as="sourcePoint" />
+            <mxPoint x="612.5" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*&lt;div&gt;llamadas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="670" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-36" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-6" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" target="Bz3iIJ4GVOsctyR1NY7K-30" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1035" y="260" as="sourcePoint" />
+            <mxPoint x="1020" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1 guia" vertex="1">
+          <mxGeometry height="30" width="60" x="940" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-42" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Bz3iIJ4GVOsctyR1NY7K-41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;h4 data-path-to-node=&quot;10&quot; style=&quot;text-align: left;&quot;&gt;Refactoring, code smells:&lt;/h4&gt;&lt;h4 data-path-to-node=&quot;10&quot; style=&quot;text-align: left;&quot;&gt;Iteración 1: La generación de números&lt;/h4&gt;&lt;ul data-path-to-node=&quot;11&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;11,0,0&quot; style=&quot;text-align: left;&quot;&gt;&lt;b data-path-to-node=&quot;11,0,0&quot; data-index-in-node=&quot;0&quot;&gt;(i) Mal olor:&lt;/b&gt; &lt;i data-path-to-node=&quot;11,0,0&quot; data-index-in-node=&quot;14&quot;&gt;Switch Statements / Type Code&lt;/i&gt; (Sentencias Switch / Código de tipo). En &lt;code data-path-to-node=&quot;11,0,0&quot; data-index-in-node=&quot;85&quot;&gt;GestorNumerosDisponibles.obtenerNumeroLibre()&lt;/code&gt;, hay un &lt;code data-path-to-node=&quot;11,0,0&quot; data-index-in-node=&quot;139&quot;&gt;switch&lt;/code&gt; basado en un String (&lt;code data-path-to-node=&quot;11,0,0&quot; data-index-in-node=&quot;167&quot;&gt;tipoGenerador&lt;/code&gt;) para decidir cómo obtener una línea.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;11,1,0&quot;&gt;&lt;b data-path-to-node=&quot;11,1,0&quot; data-index-in-node=&quot;0&quot;&gt;(ii) Refactoring:&lt;/b&gt; &lt;i data-path-to-node=&quot;11,1,0&quot; data-index-in-node=&quot;18&quot;&gt;Replace Conditional Logic with Strategy&lt;/i&gt; (Reemplazar lógica condicional con Estrategia).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;11,1,0&quot; style=&quot;text-align: left;&quot;&gt;&lt;b data-path-to-node=&quot;11,2,0&quot; data-index-in-node=&quot;0&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(iii) Aplicación:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Creamos la interfaz &lt;/span&gt;&lt;code data-path-to-node=&quot;11,2,0&quot; data-index-in-node=&quot;38&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;GeneradorStrategy&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; y sus clases concretas, e&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;n &lt;/span&gt;&lt;code data-path-to-node=&quot;11,2,2&quot; data-index-in-node=&quot;3&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;GestorNumerosDisponibles&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt; reemplazamos el String por la interfaz.&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="245" width="520" x="870" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;h4 data-path-to-node=&quot;12&quot;&gt;Iteración 2: El cálculo del monto&lt;/h4&gt;&lt;ul data-path-to-node=&quot;13&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,0,0&quot;&gt;&lt;b data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;0&quot;&gt;(i) Mal olor:&lt;/b&gt; &lt;i data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;14&quot;&gt;Feature Envy&lt;/i&gt; (Envidia de características). En &lt;code data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;60&quot;&gt;Empresa.calcularMontoTotalLlamadas()&lt;/code&gt;, la clase Empresa le pide los datos a &lt;code data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;135&quot;&gt;Llamada&lt;/code&gt; y hace cuentas que le corresponden a la llamada, y le pide el tipo a &lt;code data-path-to-node=&quot;13,0,0&quot; data-index-in-node=&quot;212&quot;&gt;Cliente&lt;/code&gt; para aplicar descuentos.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,1,0&quot;&gt;&lt;b data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;0&quot;&gt;(ii) Refactoring:&lt;/b&gt; &lt;i data-path-to-node=&quot;13,1,0&quot; data-index-in-node=&quot;18&quot;&gt;Move Method&lt;/i&gt; (Mover Método).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13,2,0&quot;&gt;&lt;b data-path-to-node=&quot;13,2,0&quot; data-index-in-node=&quot;0&quot;&gt;(iii) Aplicación:&lt;/b&gt;&lt;br&gt;Movemos el cálculo base a &lt;code data-path-to-node=&quot;13,2,0&quot; data-index-in-node=&quot;44&quot;&gt;Llamada&lt;/code&gt; y la aplicación del descuento a &lt;code data-path-to-node=&quot;13,2,0&quot; data-index-in-node=&quot;84&quot;&gt;Cliente&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="180" width="610" x="870" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;p data-path-to-node=&quot;1&quot;&gt;La regla de oro del refactoring dice que &lt;b data-path-to-node=&quot;1&quot; data-index-in-node=&quot;41&quot;&gt;&quot;no se debe alterar el comportamiento observable del sistema&quot;&lt;/b&gt;. Esto significa que si antes la aplicación daba &quot;A&quot;, después del refactoring tiene que seguir dando &quot;A&quot;. Los tests existen para garantizar justamente eso: que no rompiste la lógica de negocio.&lt;/p&gt;&lt;p data-path-to-node=&quot;2&quot;&gt;Sin embargo, cuando aplicás refactorings estructurales que modifican la interfaz pública de tus clases (como &lt;i data-path-to-node=&quot;2&quot; data-index-in-node=&quot;109&quot;&gt;Change Function Declaration&lt;/i&gt; o &lt;i data-path-to-node=&quot;2&quot; data-index-in-node=&quot;139&quot;&gt;Replace Type Code with Strategy&lt;/i&gt;), &lt;b data-path-to-node=&quot;2&quot; data-index-in-node=&quot;173&quot;&gt;estás obligado a actualizar los tests&lt;/b&gt;.&lt;/p&gt;&lt;p data-path-to-node=&quot;2&quot;&gt;Lo que &lt;b data-path-to-node=&quot;4&quot; data-index-in-node=&quot;7&quot;&gt;NO&lt;/b&gt; podés tocar en el test son las aserciones (los &lt;code data-path-to-node=&quot;4&quot; data-index-in-node=&quot;57&quot;&gt;assertEquals&lt;/code&gt;). Lo que &lt;b data-path-to-node=&quot;4&quot; data-index-in-node=&quot;79&quot;&gt;SÍ&lt;/b&gt; debés tocar es la forma en que instanciás o configurás los objetos para adaptarlos a la nueva arquitectura.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="210" width="600" x="1467" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;h4 data-path-to-node=&quot;14&quot;&gt;Iteración 3: Los tipos de Llamada&lt;/h4&gt;&lt;h4 data-path-to-node=&quot;12&quot;&gt;&lt;ul data-path-to-node=&quot;15&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;15,0,0&quot;&gt;&lt;b data-path-to-node=&quot;15,0,0&quot; data-index-in-node=&quot;0&quot;&gt;(i) Mal olor:&lt;/b&gt; &lt;i data-path-to-node=&quot;15,0,0&quot; data-index-in-node=&quot;14&quot;&gt;Type Code / Switch Statements&lt;/i&gt;. Ahora que movimos &lt;code data-path-to-node=&quot;15,0,0&quot; data-index-in-node=&quot;63&quot;&gt;calcularCostoBase()&lt;/code&gt; a &lt;code data-path-to-node=&quot;15,0,0&quot; data-index-in-node=&quot;85&quot;&gt;Llamada&lt;/code&gt;, nos queda un &lt;code data-path-to-node=&quot;15,0,0&quot; data-index-in-node=&quot;107&quot;&gt;if/else&lt;/code&gt; preguntando si es &quot;nacional&quot; o &quot;internacional&quot;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;15,1,0&quot;&gt;&lt;b data-path-to-node=&quot;15,1,0&quot; data-index-in-node=&quot;0&quot;&gt;(ii) Refactoring:&lt;/b&gt; &lt;i data-path-to-node=&quot;15,1,0&quot; data-index-in-node=&quot;18&quot;&gt;Replace Type Code with Subclasses&lt;/i&gt; (Reemplazar código de tipo por subclases) y luego &lt;i data-path-to-node=&quot;15,1,0&quot; data-index-in-node=&quot;102&quot;&gt;Replace Conditional with Polymorphism&lt;/i&gt; (Reemplazar condicional con polimorfismo).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;15,2,0&quot;&gt;&lt;b data-path-to-node=&quot;15,2,0&quot; data-index-in-node=&quot;0&quot;&gt;(iii) Aplicación:&lt;/b&gt;&lt;br/&gt;Hacemos &lt;code data-path-to-node=&quot;15,2,0&quot; data-index-in-node=&quot;26&quot;&gt;Llamada&lt;/code&gt; abstracta y creamos las subclases&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h4&gt;" vertex="1">
+          <mxGeometry height="180" width="610" x="870" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;h4 data-path-to-node=&quot;16&quot;&gt;Iteración 4: Los tipos de Cliente&lt;/h4&gt;&lt;h4 data-path-to-node=&quot;14&quot;&gt;&lt;ul data-path-to-node=&quot;17&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;17,0,0&quot;&gt;&lt;b data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;0&quot;&gt;(i) Mal olor:&lt;/b&gt; &lt;i data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;14&quot;&gt;Type Code / Switch Statements&lt;/i&gt;. En &lt;code data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;48&quot;&gt;Cliente.aplicarDescuento()&lt;/code&gt; tenemos un &lt;code data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;86&quot;&gt;if/else&lt;/code&gt; preguntando si es &quot;fisica&quot; o &quot;juridica&quot;, además de tener atributos &lt;code data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;161&quot;&gt;dni&lt;/code&gt; y &lt;code data-path-to-node=&quot;17,0,0&quot; data-index-in-node=&quot;167&quot;&gt;cuit&lt;/code&gt; mezclados en la misma clase que nunca se usan a la vez.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;17,1,0&quot;&gt;&lt;b data-path-to-node=&quot;17,1,0&quot; data-index-in-node=&quot;0&quot;&gt;(ii) Refactoring:&lt;/b&gt; &lt;i data-path-to-node=&quot;17,1,0&quot; data-index-in-node=&quot;18&quot;&gt;Replace Type Code with Subclasses&lt;/i&gt; y &lt;i data-path-to-node=&quot;17,1,0&quot; data-index-in-node=&quot;54&quot;&gt;Replace Conditional with Polymorphism&lt;/i&gt;.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;17,2,0&quot;&gt;&lt;b data-path-to-node=&quot;17,2,0&quot; data-index-in-node=&quot;0&quot;&gt;(iii) Aplicación:&lt;/b&gt;&lt;br/&gt;Hacemos &lt;code data-path-to-node=&quot;17,2,0&quot; data-index-in-node=&quot;26&quot;&gt;Cliente&lt;/code&gt; abstracta, limpiamos variables inútiles y creamos&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h4&gt;" vertex="1">
+          <mxGeometry height="180" width="610" x="1520" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=12;" value="&lt;h4 data-path-to-node=&quot;18&quot;&gt;Iteración 5: Encapsulamiento&lt;/h4&gt;&lt;h4 data-path-to-node=&quot;16&quot;&gt;&lt;ul data-path-to-node=&quot;19&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;19,0,0&quot;&gt;&lt;b data-path-to-node=&quot;19,0,0&quot; data-index-in-node=&quot;0&quot;&gt;(i) Mal olor:&lt;/b&gt; &lt;i data-path-to-node=&quot;19,0,0&quot; data-index-in-node=&quot;14&quot;&gt;Public Field&lt;/i&gt; / &lt;i data-path-to-node=&quot;19,0,0&quot; data-index-in-node=&quot;29&quot;&gt;Inappropriate Intimacy&lt;/i&gt; (Campo público / Intimidad inapropiada). En &lt;code data-path-to-node=&quot;19,0,0&quot; data-index-in-node=&quot;96&quot;&gt;Cliente&lt;/code&gt;, la lista &lt;code data-path-to-node=&quot;19,0,0&quot; data-index-in-node=&quot;114&quot;&gt;public List&amp;lt;Llamada&amp;gt; llamadas&lt;/code&gt; permite que cualquiera la modifique sin control.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;19,1,0&quot;&gt;&lt;b data-path-to-node=&quot;19,1,0&quot; data-index-in-node=&quot;0&quot;&gt;(ii) Refactoring:&lt;/b&gt; &lt;i data-path-to-node=&quot;19,1,0&quot; data-index-in-node=&quot;18&quot;&gt;Encapsulate Collection&lt;/i&gt; (Encapsular Colección).&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;19,2,0&quot;&gt;&lt;b data-path-to-node=&quot;19,2,0&quot; data-index-in-node=&quot;0&quot;&gt;(iii) Aplicación&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;19,2,0&quot;&gt;&lt;b data-path-to-node=&quot;19,2,0&quot; data-index-in-node=&quot;0&quot;&gt;(iv) Simplificar agregarNumeroTelefono():&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h4&gt;&lt;h4 data-path-to-node=&quot;16&quot;&gt;&lt;ul data-path-to-node=&quot;19&quot;&gt;&lt;li&gt;&lt;p data-path-to-node=&quot;13&quot;&gt;Este método tiene un mal olor clásico llamado &lt;i data-path-to-node=&quot;13&quot; data-index-in-node=&quot;46&quot;&gt;Complicated Boolean Expression&lt;/i&gt; (o lógica innecesariamente compleja).&lt;br&gt;Fijate lo que hace actualmente: pregunta si el número está, si no está lo agrega, setea un booleano y lo retorna. En Java, la interfaz &lt;code data-path-to-node=&quot;13&quot; data-index-in-node=&quot;250&quot;&gt;Set&lt;/code&gt; (que es lo que usa &lt;code data-path-to-node=&quot;13&quot; data-index-in-node=&quot;273&quot;&gt;SortedSet&lt;/code&gt;) al hacer &lt;code data-path-to-node=&quot;13&quot; data-index-in-node=&quot;293&quot;&gt;.add()&lt;/code&gt; devuelve automáticamente &lt;code data-path-to-node=&quot;13&quot; data-index-in-node=&quot;325&quot;&gt;true&lt;/code&gt; si lo pudo agregar y &lt;code data-path-to-node=&quot;13&quot; data-index-in-node=&quot;351&quot;&gt;false&lt;/code&gt; si ya existía. Reducir a simplemente:&lt;/p&gt;&lt;div class=&quot;code-block ng-tns-c535247018-142 ng-animate-disabled ng-trigger ng-trigger-codeBlockRevealAnimation&quot; style=&quot;display: block;&quot; data-hveid=&quot;0&quot; data-ved=&quot;0CAAQhtANahgKEwjMqd6Gv-SUAxUAAAAAHQAAAAAQsQE&quot;&gt;&lt;div class=&quot;formatted-code-block-internal-container ng-tns-c535247018-142&quot;&gt;&lt;div class=&quot;animated-opacity ng-tns-c535247018-142&quot;&gt;&lt;div class=&quot;code-block-decoration header-formatted gds-emphasized-body-m ng-tns-c535247018-142 ng-star-inserted&quot;&gt;&lt;div class=&quot;buttons ng-tns-c535247018-142 ng-star-inserted&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;pre class=&quot;ng-tns-c535247018-142&quot;&gt;&lt;code role=&quot;text&quot; data-test-id=&quot;code-content&quot; class=&quot;code-container formatted ng-tns-c535247018-142&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;agregarNumeroTelefono&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(String str)&lt;/span&gt; &lt;/span&gt;{&lt;br&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;return&lt;/span&gt; guia.getLineas().add(str);&lt;br&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/h4&gt;" vertex="1">
+          <mxGeometry height="300" width="610" x="1510" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-47" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="176.47" />
+              <mxPoint x="1310" y="213.47" />
+            </Array>
+            <mxPoint x="1290" y="176.47" as="sourcePoint" />
+            <mxPoint x="1460" y="213.47" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="luego de refactoring" vertex="1">
+          <mxGeometry height="30" width="60" x="1340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-49" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Empresa  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="300" x="1880" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-51" parent="Bz3iIJ4GVOsctyR1NY7K-49" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="10" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-52" parent="Bz3iIJ4GVOsctyR1NY7K-49" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ agregarNumeroTelefono(str: String): boolean&amp;nbsp;&lt;div&gt;+ obtenerNumeroLibre(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ registrarUsuario(c: Cliente): Cliente&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ registrarLlamada(l: llamada): Llamada&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ calcularMontoTotalLlamadas(cliente: Cliente): double&lt;/div&gt;&lt;div&gt;+ cantidadDeUsuarios(): int&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ existeUsuario(persona: Cliente): boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-53" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;div&gt;Cliente&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="194" width="230" x="1600" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-54" parent="Bz3iIJ4GVOsctyR1NY7K-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;- nombre: String&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- numeroTelefono: String&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-55" parent="Bz3iIJ4GVOsctyR1NY7K-53" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-56" parent="Bz3iIJ4GVOsctyR1NY7K-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="  + agregarLlamada(l: Llamada)&lt;br/&gt;    + getLlamadas(): List&amp;lt;Llamada&amp;gt;&lt;br/&gt;    + {abstract} aplicarDescuento(costo: double): double" vertex="1">
+          <mxGeometry height="92" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-57" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PersonaFisica &lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="1394" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-58" parent="Bz3iIJ4GVOsctyR1NY7K-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- dni: String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-59" parent="Bz3iIJ4GVOsctyR1NY7K-57" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-60" parent="Bz3iIJ4GVOsctyR1NY7K-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ aplicarDescuento(costo: double): double" vertex="1">
+          <mxGeometry height="32" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-61" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PersonaJuridica&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="1740" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-62" parent="Bz3iIJ4GVOsctyR1NY7K-61" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- cuil: String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-63" parent="Bz3iIJ4GVOsctyR1NY7K-61" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-64" parent="Bz3iIJ4GVOsctyR1NY7K-61" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ aplicarDescuento(costo: double): double" vertex="1">
+          <mxGeometry height="32" width="260" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-65" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;div&gt;Llamada  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="164" width="230" x="2310" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-66" parent="Bz3iIJ4GVOsctyR1NY7K-65" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- origen: String&lt;/div&gt;&lt;div&gt;- destino: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;- duracion: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-67" parent="Bz3iIJ4GVOsctyR1NY7K-65" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-68" parent="Bz3iIJ4GVOsctyR1NY7K-65" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ {abstract} calcularCostoBase(): double" vertex="1">
+          <mxGeometry height="42" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-73" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;LlamadaNacional&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="225" x="2135" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-75" parent="Bz3iIJ4GVOsctyR1NY7K-73" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="225" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-76" parent="Bz3iIJ4GVOsctyR1NY7K-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ calcularCostoBase(): double" vertex="1">
+          <mxGeometry height="32" width="225" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-77" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;LlamadaInternacional&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="225" x="2460" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-78" parent="Bz3iIJ4GVOsctyR1NY7K-77" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="225" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-79" parent="Bz3iIJ4GVOsctyR1NY7K-77" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ calcularCostoBase(): double" vertex="1">
+          <mxGeometry height="32" width="225" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-80" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="GestorNumerosDisponibles&amp;nbsp;" vertex="1">
+          <mxGeometry height="220" width="240" x="2330" y="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-81" parent="Bz3iIJ4GVOsctyR1NY7K-80" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;- lineas: SortedSet&amp;lt;String&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-82" parent="Bz3iIJ4GVOsctyR1NY7K-80" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="40" width="240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-83" parent="Bz3iIJ4GVOsctyR1NY7K-80" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;div&gt;+ getLineas(): SortedSet&amp;lt;String&amp;gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ obtenerNumeroLibre(): String&lt;/div&gt;&lt;div&gt;+ cambiarEstrategia(e: GeneradorStrategy)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-84" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;GeneradorStrategy  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="2970" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-86" parent="Bz3iIJ4GVOsctyR1NY7K-84" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-87" parent="Bz3iIJ4GVOsctyR1NY7K-84" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ obtenerNumero(lineas: SortedSet&amp;lt;String&amp;gt;): String" vertex="1">
+          <mxGeometry height="42" width="260" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-88" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;div&gt;GeneradorUltimo  &lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="2670" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-89" parent="Bz3iIJ4GVOsctyR1NY7K-88" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-90" parent="Bz3iIJ4GVOsctyR1NY7K-88" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ obtenerNumero(lineas: SortedSet&amp;lt;String&amp;gt;): String" vertex="1">
+          <mxGeometry height="42" width="260" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-91" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&amp;lt;&amp;lt;Strategy&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="3070" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-92" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;div&gt;GeneradorPrimero&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="2960" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-93" parent="Bz3iIJ4GVOsctyR1NY7K-92" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-94" parent="Bz3iIJ4GVOsctyR1NY7K-92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ obtenerNumero(lineas: SortedSet&amp;lt;String&amp;gt;): String" vertex="1">
+          <mxGeometry height="42" width="260" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-95" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;div&gt;GeneradorRandom&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="3260" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-96" parent="Bz3iIJ4GVOsctyR1NY7K-95" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-97" parent="Bz3iIJ4GVOsctyR1NY7K-95" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ obtenerNumero(lineas: SortedSet&amp;lt;String&amp;gt;): String" vertex="1">
+          <mxGeometry height="42" width="260" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-100" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..* clientes" vertex="1">
+          <mxGeometry height="30" width="60" x="1770" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-101" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-52" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.635;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.003;exitY=0.176;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-53" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1839.5" y="-53" as="sourcePoint" />
+            <mxPoint x="1694.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-102" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-57" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=-0.004;entryY=0.716;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.445;exitY=0.021;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-56" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1420" y="300" as="sourcePoint" />
+            <mxPoint x="1580" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-103" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-61" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.014;entryY=0.665;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.648;exitY=-0.032;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-56" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1870" y="426" as="sourcePoint" />
+            <mxPoint x="1959" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-104" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-73" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0;entryY=0.19;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.379;exitY=-0.042;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-68" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="2200" y="330" as="sourcePoint" />
+            <mxPoint x="2289" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-105" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-77" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.006;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.711;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-68" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="2700" y="326" as="sourcePoint" />
+            <mxPoint x="2789" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-106" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-88" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.542;exitY=-0.039;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-87" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="2850" y="60" as="sourcePoint" />
+            <mxPoint x="3010" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-107" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-92" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.539;exitY=-0.046;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.501;entryY=1.07;entryDx=0;entryDy=0;entryPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-87" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="3110" y="47" as="sourcePoint" />
+            <mxPoint x="3110" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-108" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-95" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.358;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-87" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="3290" y="47" as="sourcePoint" />
+            <mxPoint x="3449" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-109" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-49" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1.013;exitY=0.076;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Bz3iIJ4GVOsctyR1NY7K-81" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="2210" y="-200" as="sourcePoint" />
+            <mxPoint x="2280" y="-310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-110" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1 guia" vertex="1">
+          <mxGeometry height="30" width="60" x="2217.5" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-111" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-81" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="Bz3iIJ4GVOsctyR1NY7K-84" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="2690" y="-175" as="sourcePoint" />
+            <mxPoint x="2836" y="-235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1 estrategia" vertex="1">
+          <mxGeometry height="30" width="60" x="2750" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-114" edge="1" parent="1" source="Bz3iIJ4GVOsctyR1NY7K-54" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.39;entryDx=0;entryDy=0;entryPerimeter=0;" target="Bz3iIJ4GVOsctyR1NY7K-66" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1965" y="123" as="sourcePoint" />
+            <mxPoint x="2120" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bz3iIJ4GVOsctyR1NY7K-115" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..*&lt;div&gt;llamadas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="2037" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
