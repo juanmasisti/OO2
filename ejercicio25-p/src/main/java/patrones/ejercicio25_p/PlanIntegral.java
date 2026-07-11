@@ -4,21 +4,18 @@ class PlanIntegral extends PlanMedico {
     private static final double MONTO_FIJO = 22000.0;
 
     @Override
-    protected double calcularMontoFijo(Afiliado a) { return MONTO_FIJO; }
+    protected double calcularMontoFijo(Coseguro co) { return MONTO_FIJO; }
 
     @Override
-    protected double calcularCargoFamiliar(Afiliado a) {
-        return (3000.0 * a.getFamiliaresACargo()) + (a.getSalario() * 0.01);
+    protected double calcularCargoFamiliar(double salario, int cantFamiliares, Coseguro co) {
+        return (3000.0 * cantFamiliares) + (salario * 0.01);
     }
 
     @Override
-    protected double calcularCoberturaViajera(Afiliado a) {
-        double costoBase = a.getSalario() * 0.03;
-        if (a.tieneCoseguro()) {
-            double descuento = 10000.0 * a.getCoseguro().getAntiguedad();
-            return Math.max(0, costoBase - descuento);
-        }
-        return costoBase;
+    protected double calcularCoberturaViajera(double salario, Coseguro co) {
+        double costoBase = salario * 0.03;
+        double descuento = 10000.0 * co.getAntiguedad();
+        return Math.max(0, costoBase - descuento);
     }
 
     @Override

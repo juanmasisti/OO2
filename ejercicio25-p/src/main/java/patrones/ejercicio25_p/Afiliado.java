@@ -8,7 +8,8 @@ public class Afiliado {
     private double salario;
     private LocalDate fechaNacimiento;
     private PlanMedico plan;
-    private Coseguro coseguro; // Puede ser null
+    // NACE inicializado con el Null Object. ¡Chau nulls!
+    private Coseguro coseguro = new CoseguroNulo();
 
     public Afiliado(String nombre, int familiaresACargo, double salario, LocalDate fechaNacimiento, PlanMedico plan) {
         this.nombre = nombre;
@@ -19,15 +20,18 @@ public class Afiliado {
     }
 
     public void setPlanMedico(PlanMedico plan) { this.plan = plan; }
-    public void setCoseguro(Coseguro coseguro) { this.coseguro = coseguro; }
+    // Si contrata un coseguro, usamos el setter (sobreescribe el null por defecto).
+    public void setCoseguro(Coseguro coseguro) { 
+        this.coseguro = coseguro; 
+    }
 
     public int getFamiliaresACargo() { return familiaresACargo; }
     public double getSalario() { return salario; }
-    public boolean tieneCoseguro() { return this.coseguro != null; }
     public Coseguro getCoseguro() { return coseguro; }
+    
 
-    // El afiliado delega pasándose a sí mismo como contexto
+    // El afiliado delega pasándo sus datos a la estrategia configurada (plan médico) para calcular el monto total a pagar.
     public double calcularMonto() {
-        return plan.calcularCostoTotal(this);
+        return plan.calcularCostoTotal(this.getSalario(), this.getFamiliaresACargo(), this.getCoseguro());
     }
 }

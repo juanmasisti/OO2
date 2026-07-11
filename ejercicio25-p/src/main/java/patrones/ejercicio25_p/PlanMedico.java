@@ -11,16 +11,16 @@ public abstract class PlanMedico {
 
     // --- TEMPLATE METHOD ---
     // Define el esqueleto inmutable del algoritmo
-    public final double calcularCostoTotal(Afiliado a) {
-        return calcularMontoFijo(a) + 
-               calcularCargoFamiliar(a) + 
-               calcularCoberturaViajera(a) + 
+    public final double calcularCostoTotal(double salario, int cantFamiliares, Coseguro co) {
+        return calcularMontoFijo(co) + 
+               calcularCargoFamiliar(salario, cantFamiliares, co) + 
+               calcularCoberturaViajera(salario,co) + 
                calcularSeguroInternacion();
     }
 
     // --- OPERACIONES PRIMITIVAS (Ganchos) ---
-    protected abstract double calcularMontoFijo(Afiliado a);
-    protected abstract double calcularCargoFamiliar(Afiliado a);
-    protected abstract double calcularCoberturaViajera(Afiliado a);
+    protected abstract double calcularMontoFijo(Coseguro co);
+    protected abstract double calcularCargoFamiliar(double salario, int cantFamiliares, Coseguro co);
+    protected abstract double calcularCoberturaViajera(double salario, Coseguro co);
     protected abstract double calcularSeguroInternacion();
 }

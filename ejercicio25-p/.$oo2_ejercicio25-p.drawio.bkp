@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Página-1" id="hgkIjeGJ8mx-s78pUFdz">
-    <mxGraphModel dx="1398" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry height="72" width="230" y="108" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;div&gt;PlanMedico &lt;/div&gt;" vertex="1">
-          <mxGeometry height="290" width="300" x="1060" y="295" as="geometry" />
+          <mxGeometry height="280" width="300" x="1060" y="300" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-44" parent="vCeZowl73eoQ8jg0O6y2-11" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="- fechaContratacion: LocalDate" vertex="1">
           <mxGeometry height="30" width="300" y="40" as="geometry" />
@@ -25,41 +25,41 @@
         <mxCell id="vCeZowl73eoQ8jg0O6y2-12" parent="vCeZowl73eoQ8jg0O6y2-11" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="10" width="300" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="vCeZowl73eoQ8jg0O6y2-13" parent="vCeZowl73eoQ8jg0O6y2-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    + getFechaContratacion(): LocalDate&lt;br&gt;    + limitePrestaciones(): Integer&lt;br&gt;    &lt;br&gt;    &amp;lt;&amp;lt;Template Method&amp;gt;&amp;gt;&lt;br&gt;    + calcularCostoTotal(salario: double, cantFamiliares: int, co: Coseguro): double&lt;br&gt;    &lt;br&gt;    &amp;lt;&amp;lt;Primitive Operations&amp;gt;&amp;gt;&lt;br&gt;    # abstract calcularMontoFijo(co: Coseguro): double&lt;br&gt;    # abstract calcularCargoFamiliar(salario: double, cantFamiliares: int, co: Coseguro): double&lt;br&gt;    # abstract calcularCoberturaViajera(salario: double, co: Coseguro): double&lt;br&gt;    # abstract calcularSeguroInternacion(): double" vertex="1">
-          <mxGeometry height="210" width="300" y="80" as="geometry" />
+        <mxCell id="vCeZowl73eoQ8jg0O6y2-13" parent="vCeZowl73eoQ8jg0O6y2-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    + getFechaContratacion(): LocalDate&lt;br&gt;    + limitePrestaciones(): Integer&lt;br&gt;    &lt;br&gt;    &amp;lt;&amp;lt;Template Method&amp;gt;&amp;gt;&lt;br&gt;    + calcularCostoTotal(a: Afiliado): double&lt;br&gt;    &lt;br&gt;    &amp;lt;&amp;lt;Primitive Operations&amp;gt;&amp;gt;&lt;br&gt;    # abstract calcularMontoFijo(a: Afiliado): double&lt;br&gt;    # abstract calcularCargoFamiliar(a: Afiliado): double&lt;br&gt;    # abstract calcularCoberturaViajera(a: Afiliado): double&lt;br&gt;    # abstract calcularSeguroInternacion(): double" vertex="1">
+          <mxGeometry height="200" width="300" y="80" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;Strategy&amp;gt;&amp;gt;" vertex="1">
           <mxGeometry height="40" width="110" x="1170" y="270" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-15" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;PlanObligatorio  &lt;/div&gt;" vertex="1">
-          <mxGeometry height="180" width="230" x="800" y="640" as="geometry" />
+          <mxGeometry height="150" width="230" x="800" y="640" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-16" parent="vCeZowl73eoQ8jg0O6y2-15" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="230" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="vCeZowl73eoQ8jg0O6y2-17" parent="vCeZowl73eoQ8jg0O6y2-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(co: Coseguro): double&lt;div&gt;&amp;nbsp;# calcularCargoFamiliar(salario: double, cantFamiliares: int, co: Coseguro): double&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;# calcularCoberturaViajera(salario: double, co: Coseguro): double&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;# calcularSeguroInternacion(): double&lt;/div&gt;" vertex="1">
-          <mxGeometry height="132" width="230" y="48" as="geometry" />
+        <mxCell id="vCeZowl73eoQ8jg0O6y2-17" parent="vCeZowl73eoQ8jg0O6y2-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(a: Afiliado): double&lt;div&gt;&amp;nbsp;# calcularCargoFamiliar(a: Afiliado): double&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;# calcularCoberturaViajera(a: Afiliado): double&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;# calcularSeguroInternacion(): double&lt;/div&gt;" vertex="1">
+          <mxGeometry height="102" width="230" y="48" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;PlanIntegral&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="180" width="230" x="1110" y="690" as="geometry" />
+          <mxGeometry height="170" width="230" x="1110" y="690" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-19" parent="vCeZowl73eoQ8jg0O6y2-18" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="230" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="vCeZowl73eoQ8jg0O6y2-20" parent="vCeZowl73eoQ8jg0O6y2-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(co: Coseguro): double&lt;br&gt;    # calcularCargoFamiliar(salario: double, cantFamiliares: int, co: Coseguro): double&lt;br&gt;    # calcularCoberturaViajera(salario: double, co: Coseguro): double&lt;br&gt;    # calcularSeguroInternacion(): double" vertex="1">
-          <mxGeometry height="132" width="230" y="48" as="geometry" />
+        <mxCell id="vCeZowl73eoQ8jg0O6y2-20" parent="vCeZowl73eoQ8jg0O6y2-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(a: Afiliado): double&lt;br/&gt;    # calcularCargoFamiliar(a: Afiliado): double&lt;br/&gt;    # calcularCoberturaViajera(a: Afiliado): double&lt;br/&gt;    # calcularSeguroInternacion(): double" vertex="1">
+          <mxGeometry height="122" width="230" y="48" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1 PlanMedico " vertex="1">
           <mxGeometry height="30" width="60" x="970" y="360" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-33" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;ConcreteStrategy&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;PlanPremium&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="190" width="230" x="1400" y="640" as="geometry" />
+          <mxGeometry height="160" width="230" x="1400" y="640" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-34" parent="vCeZowl73eoQ8jg0O6y2-33" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="230" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="vCeZowl73eoQ8jg0O6y2-35" parent="vCeZowl73eoQ8jg0O6y2-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(co: Coseguro): double&lt;br&gt;    # calcularCargoFamiliar(salario: double, cantFamiliares: int, co: Coseguro): double&lt;br&gt;    # calcularCoberturaViajera(salario: double, co: Coseguro): double&lt;br&gt;    # calcularSeguroInternacion(): double" vertex="1">
-          <mxGeometry height="142" width="230" y="48" as="geometry" />
+        <mxCell id="vCeZowl73eoQ8jg0O6y2-35" parent="vCeZowl73eoQ8jg0O6y2-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    # calcularMontoFijo(a: Afiliado): double&lt;br/&gt;    # calcularCargoFamiliar(a: Afiliado): double&lt;br/&gt;    # calcularCoberturaViajera(a: Afiliado): double&lt;br/&gt;    # calcularSeguroInternacion(): double" vertex="1">
+          <mxGeometry height="112" width="230" y="48" as="geometry" />
         </mxCell>
         <mxCell id="vCeZowl73eoQ8jg0O6y2-36" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Afiliado&lt;/span&gt;" vertex="1">
           <mxGeometry height="220" width="230" x="680" y="340" as="geometry" />
@@ -104,24 +104,6 @@
           <mxGeometry relative="1" width="160" as="geometry">
             <mxPoint x="1400" y="619" as="sourcePoint" />
             <mxPoint x="1505" y="551" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="3NYEpA4OdfKRHRr-XOsw-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CoseguroNulo" vertex="1">
-          <mxGeometry height="180" width="230" x="360" y="780" as="geometry" />
-        </mxCell>
-        <mxCell id="3NYEpA4OdfKRHRr-XOsw-2" parent="3NYEpA4OdfKRHRr-XOsw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- nombre: String&lt;br&gt;    - descuento: Integer&lt;br&gt;    - fechaIngreso: LocalDate&lt;br&gt;    - montoCoberturaViajes: double" vertex="1">
-          <mxGeometry height="74" width="230" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="3NYEpA4OdfKRHRr-XOsw-3" parent="3NYEpA4OdfKRHRr-XOsw-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="230" y="100" as="geometry" />
-        </mxCell>
-        <mxCell id="3NYEpA4OdfKRHRr-XOsw-4" parent="3NYEpA4OdfKRHRr-XOsw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="    + getDescuento(): double&amp;nbsp;&lt;div&gt;+ getAntiguedad(): Integer&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getMontoCoberturaViajes(): double&lt;/div&gt;" vertex="1">
-          <mxGeometry height="72" width="230" y="108" as="geometry" />
-        </mxCell>
-        <mxCell id="3NYEpA4OdfKRHRr-XOsw-5" edge="1" parent="1" source="3NYEpA4OdfKRHRr-XOsw-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.574;entryY=1.056;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="vCeZowl73eoQ8jg0O6y2-6" value="Extends">
-          <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="460" y="723" as="sourcePoint" />
-            <mxPoint x="565" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
